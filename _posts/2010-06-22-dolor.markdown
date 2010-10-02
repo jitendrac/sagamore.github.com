@@ -1,0 +1,7 @@
+---
+layout: default
+title: Dolor
+author: jstotz
+---
+
+Commodi similique nobis explicabo. Amet illum ut asperiores quia adipisci temporibus tempora est. Mollitia quisquam vero iure. Molestias sunt rem ex aut vero omnis nemo.

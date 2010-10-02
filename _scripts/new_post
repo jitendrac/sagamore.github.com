@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+file=`date +%Y-%m-%d`-$1
+$EDITOR 

@@ -3,8 +3,10 @@ layout: default
 title: Slingshot Developer Blog
 ---
 
-This project <a href="http://github.com/slingshot/slingshot.github.com">Slingshot Developer Blog</a> is awesome.
-
-To enable Disqus comments + badges for this site, [add it to your Disqus account](http://disqus.com/add/).
-
-Also, you can/should [create a Lighthouse project](http://slingshot.lighthouseapp.com/projects/new) for your project and update "TODO" within the _layouts files with the project id (e.g. "12345-slingshot.github.com" from the Lighthouse project url).
+{% for post in site.posts limit:5 %}
+<li>
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  <div class="posted_date">Posted on {{ post.date | date_to_long_string }}.</div>
+  <a href="{{ post.url }}#disqus_thread">comments</a>
+</li>
+{% endfor %}

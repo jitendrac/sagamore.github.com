@@ -10,8 +10,8 @@ layout: nil
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://slingshot.github.com/slingshot.github.com/</id>
  <author>
-   <name>Dr Nic Williams</name>
-   <email>slingshotwilliams@gmail.com</email>
+   <name>Slingshot Software</name>
+   <email>dev@slingshotsoftware.com</email>
  </author>
 
  {% for post in site.posts %}

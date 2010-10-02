@@ -1,0 +1,7 @@
+---
+layout: default
+title: Eos
+author: mcameron
+---
+
+Eos nemo eaque in. Enim et reprehenderit in. Vel omnis tenetur optio id voluptas.
