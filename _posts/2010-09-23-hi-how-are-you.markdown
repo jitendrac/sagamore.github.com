@@ -4,7 +4,7 @@ title: Hi, How Are You?
 author: mcameron
 ---
 
-<a href="http://en.wikipedia.org/wiki/Hi,_How_Are_You"><img title="Hi, How Are You?" src="{{ site.root }}images/posts/hihowareyou.jpg" alt="Cover art from Daniel Johnston's album &quot;Hi, How Are You: The Unfinished Album&quot;" width="258" height="325" align="left" /></a>
+<a href="http://en.wikipedia.org/wiki/Hi,_How_Are_You"><img title="Hi, How Are You?" src="{{ site.root }}/images/posts/hihowareyou.jpg" alt="Cover art from Daniel Johnston's album &quot;Hi, How Are You: The Unfinished Album&quot;" width="258" height="325" align="left" /></a>
 My name is Myke Cameron, and I develop software for <a href="http://slingshotsoftware.com">Slingshot Software</a>.  My love of software began when I first discovered the <a href="http://en.wikipedia.org/wiki/Qbasic">QBasic</a> installation hiding on a family friend’s laptop, and wrote my first “hello world”:
 
 {% highlight vb %}
