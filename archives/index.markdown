@@ -9,7 +9,7 @@ title: Archives
 <ul>
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
-    <span class="posted_date">{{ post.date | date: "%m/%d%/%Y" }} by {% include author.html %}</span>
+    <span class="posted_date">{{ post.date | date: "%m/%d/%Y" }} by {% include author.html %}</span>
   </li>
 </ul>
 {% endfor %}
