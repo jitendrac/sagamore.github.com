@@ -1,7 +1,0 @@
----
-layout: default
-title: Vel Est
-author: mcameron
----
-
-Quo et quis et. Sit libero aut fuga suscipit. Molestiae saepe autem et et. A quisquam culpa qui cumque eligendi. Beatae velit nisi ut.

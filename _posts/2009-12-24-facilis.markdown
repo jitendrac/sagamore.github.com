@@ -1,7 +1,0 @@
----
-layout: default
-title: Facilis
-author: jstotz
----
-
-Accusamus est id officia nihil et eum neque sed. Enim veritatis fugit amet consequatur aut vitae mollitia quaerat. Quis est aliquid autem officiis temporibus. Occaecati fugit et voluptatem pariatur aliquid ratione.

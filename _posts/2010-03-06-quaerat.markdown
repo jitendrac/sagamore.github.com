@@ -1,7 +1,0 @@
----
-layout: default
-title: Quaerat
-author: jstotz
----
-
-Et voluptate libero magnam dolor mollitia tempora nulla repellat. Quasi aut omnis numquam ea temporibus sed nulla. Eos amet aut doloribus occaecati cum reprehenderit. Deleniti ipsa commodi eaque.

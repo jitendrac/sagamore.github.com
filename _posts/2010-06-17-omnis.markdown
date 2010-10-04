@@ -1,9 +1,0 @@
----
-layout: default
-title: Omnis
-author: mcameron
----
-
-Vel sed amet tempora consequatur reprehenderit sequi. Molestiae ut minima explicabo. Quam sequi ex eos nam.
-
-Qui nemo rerum adipisci. Iusto et minus itaque laudantium repellendus sint. Aperiam similique consequatur et repudiandae sapiente expedita. Quis sint voluptatem vero earum repudiandae. Expedita explicabo aut autem harum repellat.
