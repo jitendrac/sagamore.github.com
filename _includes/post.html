@@ -1,7 +1,19 @@
-<h2>{{ page.title }}</h2>
-<div class="posted_date">Posted on {{ page.date | date_to_long_string }}</div>
-
+{% include post_header.html %}
 {{ content }}
+
+<div class="post_nav">
+  {% if post.previous %}
+  <div class="previous">
+    &laquo; <a href="{{ post.previous.url }}">{{ post.previous.title }}</a>
+  </div>
+  {% endif %}
+  {% if post.next %}
+  <div class="next">
+    <a href="{{ post.next.url }}">{{ post.next.title }}</a> &raquo;
+  </div>
+  {% endif %}
+</div>
+
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   (function() {
