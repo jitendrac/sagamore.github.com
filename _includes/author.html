@@ -1,0 +1,11 @@
+{% for author in site.authors %}
+  {% if post.author == author.id %}
+    {% assign author_data = author %}
+  {% endif %}
+{% endfor %}
+
+{% if author_data %}
+  <a href="{{author_data.uri}}">{{author_data.name}}</a>
+{% else %}
+  {{ post.author }}
+{% endif %}
