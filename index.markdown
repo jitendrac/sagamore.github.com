@@ -6,7 +6,7 @@ layout: default
 <div class="post">
   {% include post_header.html %}
   {{ post.content }}
-  <a href="{{ post.url }}#disqus_thread">comments</a>
+  <a href="{{ post.url }}">Permalink</a> | <a href="{{ post.url }}#disqus_thread">comments</a>
 </div>
 {% endfor %}
 
