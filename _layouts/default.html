@@ -20,14 +20,30 @@
 	  {% endif %}
 	</div> 
 	<div id="sidebar">
+	  <div id="about">
+	    <h2>About</h2>
+	    This is the official developer blog for <a href="http://www.slingshotsoftware.com/">Slingshot Software</a>, purveyor of fine ERP systems.
+	  </div>
+	  
 	  <div id="links">
-  		<ul>
-        <li><a href="{{ site.root }}/about">About</a></li>
-        <li><a href="{{ site.root }}/contact">Contact</a></li>
-        <li><a href="{{ site.root }}/archives">Archives</a></li>
-        <li><a href="http://www.twitter.com/SlingshotDevel"><img src="http://twitter-badges.s3.amazonaws.com/t_mini-a.png" alt="Follow SlingshotDevel on Twitter" style="vertical-align:middle;border:0" /></a>&nbsp;@<a href="http://www.twitter.com/SlingshotDevel">SlingshotDevel</a></li>
-        <li><a href="http://feeds.feedburner.com/SlingshotDeveloperBlog" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/SlingshotDeveloperBlog" rel="alternate" type="application/rss+xml">Subscribe (RSS)</a></li>
-  		</ul>	  
+  		<a href="http://www.twitter.com/SlingshotDevel">
+  		  <img src="{{ site.root}}/images/icons/twitter-24x24.png" alt="SlingshotDevel on Twitter" />
+  		</a>
+      <a href="http://github.com/slingshot">
+        <img src="{{ site.root}}/images/icons/github-24x24.png" alt="GitHub" />
+      </a>
+      <a href="http://www.facebook.com/pages/Slingshot-Software/55450841818">
+        <img src="{{ site.root}}/images/icons/facebook-24x24.png" alt="Facebook" />
+      </a>
+      <a href="http://www.linkedin.com/companies/slingshot-software">
+        <img src="{{ site.root}}/images/icons/linkedin-24x24.png" alt="LinkedIn" style="vertical-align:middle;border:0" />
+      </a>
+      <a href="mailto:dev@slingshotsoftware.com">
+        <img src="{{ site.root}}/images/icons/email-24x24.png" alt="Email" />
+      </a>      
+      <a href="http://feeds.feedburner.com/SlingshotDeveloperBlog" rel="alternate" type="application/rss+xml">
+        <img src="{{ site.root}}/images/icons/feed-24x24.png" alt="RSS Feed" />
+      </a>
     </div>
 	  
 	  <div id="recent">
@@ -38,8 +54,11 @@
           <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
         {% endfor %}
-  		</ul> 	   
-	  </div>
+        <li>
+          <a href="{{ site.root }}/archives">More &raquo;</a>
+        </li>        
+  		</ul>
+	  </div>	  
 	  
     <div id="search">
 	    <form action="http://www.google.com/cse" id="cse-search-box">
@@ -50,7 +69,7 @@
           <input type="submit" name="sa" value="Search" />
         </div>
       </form>
-	  </div>	  
+	  </div>
 	</div> 
 	<div id="footer"> 
 		<p>&copy; {{ site.time | date: "%Y"}} <a href="http://www.slingshotsoftware.com/">Slingshot Software</a></p> 

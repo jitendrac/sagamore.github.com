@@ -1,17 +1,35 @@
 {% include post_header.html %}
 {{ content }}
 
-<div class="post_nav">
-  {% if post.previous %}
+<div class="post_footer">
   <div class="previous">
+    {% if post.previous %}
     &laquo; <a href="{{ post.previous.url }}">{{ post.previous.title }}</a>
+    {% else %}
+    &nbsp;
+    {% endif %}
   </div>
-  {% endif %}
-  {% if post.next %}
+  
+  <div class="share">
+    &nbsp;
+    <span class="st_email"></span>
+    <span class="st_twitter"></span>
+    <span class="st_reddit"></span>
+    <span class="st_digg"></span>
+    <span class="st_facebook"></span>    
+    <span class="st_sharethis" displayText="More"></span>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'2ff55e0e-01bf-4285-8b64-be210ffadc8d'});</script>
+    &nbsp;
+  </div>
+  
   <div class="next">
+    {% if post.next %}
     <a href="{{ post.next.url }}">{{ post.next.title }}</a> &raquo;
+    {% else %}
+    &nbsp;
+    {% endif %}
   </div>
-  {% endif %}
+  
   <div style="clear:both"></div>
 </div>
 
