@@ -46,7 +46,7 @@ h1 a, h1 a:visited {
 
 h2 {
   margin: 0 0 1em;
-  font-weight: normal;  
+  font-weight: normal;
 }
 
 #footer {
@@ -85,6 +85,10 @@ div.post {
 
 h2.post_title {
   margin-bottom: 5px;
+}
+
+h2.post_title a {
+  text-decoration: none;
 }
 
 .post_date {
