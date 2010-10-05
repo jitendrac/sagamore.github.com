@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Slingshot Developer Blog
 ---
 
 {% for post in site.posts limit:5 %}

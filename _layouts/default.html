@@ -4,7 +4,7 @@
 <head> 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 	<link rel="stylesheet" type="text/css" href="{{ site.root }}/css/stylesheet.css" charset="utf-8">
-	<title>{{ page.title }}</title> 
+	<title>Slingshot Developer Blog{% if page.title %}: {{ page.title }}{% endif %}</title> 
 </head> 
 <body> 
 <div id="wrapper"> 
@@ -23,7 +23,7 @@
 	  <div id="links">
   		<ul>
         <li><a href="{{ site.root }}/about">About</a></li>
-        <li><a href="http://www.slingshotsoftware.com/content/company/contact-us">Contact</a></li>
+        <li><a href="{{ site.root }}/contact">Contact</a></li>
         <li><a href="{{ site.root }}/archives">Archives</a></li>
         <li><a href="http://feeds.feedburner.com/SlingshotDeveloperBlog" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/SlingshotDeveloperBlog" rel="alternate" type="application/rss+xml">Subscribe (RSS)</a></li>      
   		</ul>	  

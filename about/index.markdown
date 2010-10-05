@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Slingshot Developer Blog
+title: About
 ---
 
-We are developers at Slingshot.
+This is the official developer blog for [Slingshot Software](http://www.slingshotsoftware.com), purveyor of fine ERP systems.
