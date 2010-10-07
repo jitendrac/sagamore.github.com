@@ -39,7 +39,7 @@
 	  </div>
 	  
 	  <div id="links">
-  		<a href="http://www.twitter.com/SlingshotDevel">
+  		<a href="http://twitter.com/SlingshotDevel">
   		  <img src="{{ site.root}}/images/icons/twitter-24x24.png" alt="SlingshotDevel on Twitter" />
   		</a>
       <a href="http://github.com/slingshot">
@@ -71,7 +71,44 @@
           <a href="{{ site.root }}/archives">More &raquo;</a>
         </li>        
   		</ul>
-	  </div>	  
+	  </div>
+	  
+	  <div id="twitter">
+	    <h2>Recent Tweets</h2>
+	    <div class="username">@<a href="http://twitter.com/SlingshotDevel">SlingshotDevel</a></div>
+	    
+	    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+      new TWTR.Widget({
+        version: 2,
+        type: 'profile',
+        rpp: 4,
+        interval: 6000,
+        width: 'auto',
+        height: 300,
+        theme: {
+          shell: {
+            background: '#fff',
+            color: '#fff'
+          },
+          tweets: {
+            background: '#ffffff',
+            color: '#4a4a4a',
+            links: '#0e4e92'
+          }
+        },
+        features: {
+          scrollbar: false,
+          loop: false,
+          live: false,
+          hashtags: true,
+          timestamp: true,
+          avatars: false,
+          behavior: 'all'
+        }
+      }).render().setUser('SlingshotDevel').start();
+      </script>
+	  </div>
 	  
     <div id="search">
 	    <form action="http://www.google.com/cse" id="cse-search-box">
