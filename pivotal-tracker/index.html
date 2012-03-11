@@ -3,11 +3,40 @@
   <head>
     <meta charset="utf-8"/>
     <link rel="shortcut icon" href="http://www.pivotaltracker.com/favicon.ico" />
+    <style>
+      body {
+        background-color: #256188;
+      }
+
+      .redirecting {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+      }
+
+      .redirecting img.logo {
+        display: block;
+        margin-bottom: 36px;
+      }
+
+      .redirecting div.message {
+        font-size: 14px;
+        text-shadow: 1px 1px 1px #333;
+        font-weight: bold;
+        color: #eee;
+        margin-bottom: 8px;
+        font-family: Arial, Verdana, sans-serif;
+      }
+    </style>
   </head>
   <body>
-    Redirecting to Pivotal Tracker...
+    <div class="redirecting" align="center">
+      <img class="logo" src="https://cdn3-pivotaltracker.pantherssl.com/images/v7/logos/pivotal_tracker_white.png">
+      <div class="message">Redirecting...</div>
+      <img class="loading" src="loading.gif">
+    </div>
   </body>
   <script>
-    window.location.replace("https://www.pivotaltracker.com/google_domain_openid/redirect_for_auth?domain=sagamoreretail.com");
+    // window.location.replace("https://www.pivotaltracker.com/google_domain_openid/redirect_for_auth?domain=sagamoreretail.com");
   </script>
 </html>
