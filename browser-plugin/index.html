@@ -1,26 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <link rel="shortcut icon" href="http://www.pivotaltracker.com/favicon.ico" />
-    <style>
-      body {
-        font-size: 14px;
-        font-family: Arial, Verdana, sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-  <h1>Sagamore Browser Plugin</h1>
 
-  <p>The Sagamore Browser Plugin allows the Sagamore POS to print to your receipt printer and access other POS devices.</p>
-  <h2>How to Install</h2>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
 
-  <ol>
-    <li>Exit all web browsers (Firefox, Google Chrome, Internet Explorer) if you have any open.</li>
-    <li><a href="SagamoreBrowserPlugin_Installer.msi">Click here</a> to download the Sagamore Browser Plugin installer.</li>
-  </ol>
-  </body>
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Sagamore Plugin</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="../stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="../stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="../stylesheets/app.css">
+
+  <script src="../javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <div class="row">
+    <div class="twelve columns">
+      <h1><img alt="Sagamore Retail" src="../images/sag_logo_black.svg" /></h1>
+
+      <hr />
+
+      <h3>Sagamore Plugin</h3>
+      <p>The Sagamore Plugin allows the Sagamore POS to print to your receipt printer and access other POS devices.</p>
+
+      <hr />
+
+      <h3>Setup Instructions</h3>
+      <ol>
+        <li>Download the Sagamore Browser Plugin installer (below). If prompted, click "Save File" or "Save".</li>
+        <li>Double click the file (<em>SagamoreBrowserPlugin_Installer.msi</em>) in your Downloads window to run it.</li>
+        <li>Follow the instructions to complete installation.</li>
+        <li>Close and reopen any web browsers (Firefox, Google Chrome, Internet Explorer).</li>
+      </ol>
+
+      <hr />
+
+      <p><a href="SagamoreBrowserPlugin_Installer.msi" class="medium button">Download Sagamore Plugin</a></p>
+    </div>
+  </div>
+
+  <!-- Included JS Files (Compressed) -->
+  <script src="../javascripts/jquery.js"></script>
+  <script src="../javascripts/foundation.min.js"></script>
+
+  <!-- Initialize JS Plugins -->
+  <script src="../javascripts/app.js"></script>
+</body>
 </html>
-
 
