@@ -66,6 +66,10 @@ label {font-size:22px; font-weight:300; margin-top:1em; margin-bottom:2em;}
 	text-decoration:underline;
 }
 
+#menu a.beta {
+  color: #6fa0eb;
+}
+
 /* Home page banner slides: */
 
 .homeslideone {
