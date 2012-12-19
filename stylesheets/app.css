@@ -1,29 +1,290 @@
-/* Artfully masterminded by ZURB  */
+@charset "utf-8";
+/* CSS Document */
 
-/* -------------------------------------------------- 
-   Table of Contents
------------------------------------------------------
-:: Shared Styles
-:: Page Name 1
-:: Page Name 2
-*/
+body { background-image: url(../images/backgrounds/Noise_3.png); background-repeat:repeat; background-color:#f3f0eb; font-family: "ratio", Times New Roman, serif; font-weight: 300; font-style: normal; font-size: 14px; line-height: 1; color: #2e2e2e; position: relative; -webkit-font-smoothing: antialiased; }
 
+p { font-family: inherit; font-weight:300; font-size: 35px; line-height: 1.6; margin-bottom: 30px; }
 
-/* -----------------------------------------
-   Shared Styles
------------------------------------------ */
+h1, h2, h3, h4, h5, h6 { font-family: "museo-sans", Arial, sans-serif; font-weight: 500; font-style: normal; margin-bottom:20px;}
 
+a {color:#6fa0eb;}
 
+a:hover {color:#4772b5;}
 
-/* -----------------------------------------
-   Page Name 1
------------------------------------------ */
+.button { background: #6fa0eb; border:none;}
+.button:hover, .button:focus { color: white; background-color: #4772b5; }
+.button.large { font-size: 30px; padding: 10px 30px 10px 30px; border:none; font-weight:300;}
 
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"] { height:3em; width:100%; font-size:20px; margin-top:1em;}
 
+textarea { height:8em; width:100%; font-size:20px; margin-top:1em;}
 
+label {font-size:22px; font-weight:300; margin-top:1em; margin-bottom:2em;}
 
-/* -----------------------------------------
-   Page Name 2
------------------------------------------ */
+.postfix { height:3em; width:100%; font-size:20px; padding-top:11px; margin-top:1em;}
 
+/* Top navigation */
 
+.topnav {margin-top:2em;}
+
+.logo {margin-bottom:1.4em;}
+
+.textcenter {text-align:center;}
+
+.homeextra {padding-bottom:30px;}
+
+.betabutton {text-align:center; font-size:24px; font-family:"museo-sans", Arial, sans-serif; font-weight:300; padding-top:1em; padding-bottom:1em;}
+
+.submitbutton {text-align:center; font-size:18px; font-family:"museo-sans", Arial, sans-serif; margin:0; padding:10px 0 0 0; font-weight:300;}
+
+#menu {
+	float:right;
+}
+
+#menu ul {
+	list-style: none;/*Takes away the bullets.*/
+	padding: 0;
+}
+#menu li {
+	font-family: "museo-sans", Arial, sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	font-size:20px;
+	float: left;/*Float each item to the left, causing a horizontal inline set of anchors.*/
+	margin-right:1.5em;
+	letter-spacing:1px;
+}
+#menu li:last-child {
+	margin-right:0;
+}
+#menu a {
+	text-decoration: none;
+	display: block;
+	color: #282828;
+}
+#menu a:hover {
+	text-decoration:underline;
+}
+
+#menu a.beta {
+  color: #6fa0eb;
+}
+
+/* Home page banner slides: */
+
+#featuredContent { display: none; }
+#featuredContent.orbit { display: block; }
+
+.homeslideone {
+	background-image: url(../images/banners/grafton-banner-rounded.png);
+	background-repeat:no-repeat; 
+	background-size:100% auto;
+}
+.homeslidetwo {
+	background-image: url(../images/banners/london-banner-rounded.png);
+	background-repeat:no-repeat; 
+	background-size:100% auto;
+}
+.homeslidethree {
+	background-image: url(../images/banners/variety-banner-rounded.png);
+	background-repeat:no-repeat; 
+	background-size:100% auto;
+}
+.homeslidefour {
+	background-image: url(../images/banners/pioneer-banner-rounded.png);
+	background-repeat:no-repeat; 
+	background-size:100% auto;
+}
+
+.bannerbox {
+	background-image:url(../images/backgrounds/graybanneroverlay.png);
+	background-repeat:repeat;
+	margin-top:5%;
+	width:50%;
+	height:60%;
+	float:right;
+	padding: 1% 8% 2% 2%;
+}
+
+.h1box {
+	width:60%;
+}
+
+.bannerbox h1 {
+	color: #fff;
+	font-weight:normal;
+	text-shadow: 1px 1px 2px #1d1d1d;
+}
+
+.bannerbox h2 {
+	color: #fff;
+	font-family: "ratio", Arial, sans-serif;
+	font-style:normal;
+	font-weight:400;
+	font-size:24px;
+	line-height:1.2;
+	text-shadow: 1px 1px 2px #1d1d1d;
+}
+
+.bannericon {
+	float:right;
+	margin-top:5%;
+	height:100% auto;
+	width:100% auto;
+}
+
+.bannericon img {
+	height:100% auto;
+	width:100% auto;
+}
+
+/* Cloud background*/
+
+#cloud {background-image:url(../images/backgrounds/clowd_background_home_2.png); background-repeat:no-repeat; background-position:bottom; background-size:100%; padding-bottom:30px;}
+
+#clowd {
+	background-image:url(../images/backgrounds/clowd_background_home_2.png); 
+	background-repeat:no-repeat; 
+	background-position:center top;
+	background-size: 95%;
+	background-attachment:fixed;
+	width:100%;
+	height:100%;}
+
+/* Value Prop Section */
+
+#vp {
+	background-color:#fff;
+	padding:30px;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+#vp h2 {
+	margin-top:0;
+}
+#vp p {
+	font-size:30px;
+	margin-bottom:10px;
+}
+
+#vpone {
+	background-image: url(../images/backgrounds/value_prop_integration.png);
+	background-repeat:no-repeat; 
+	background-position:top right;
+	background-size: 40% auto;
+}
+#vptwo {
+	background-image: url(../images/backgrounds/value_prop_cloud.png);
+	background-repeat:no-repeat; 
+	background-position:top right;
+	background-size: 40% auto;
+}
+#vpthree {
+	background-image: url(../images/backgrounds/value_prop_sell_more.png);
+	background-repeat:no-repeat; 
+	background-position:top right;
+	background-size: 40% auto;
+}
+#vpfour {
+	background-image: url(../images/backgrounds/value_prop_wrench.png);
+	background-repeat:no-repeat; 
+	background-position:top right;
+	background-size: 40% auto;
+}
+
+#features li {
+	font-size:30px;
+	line-height:1.6;
+	padding-right:10px;
+	list-style-image:url(../images/backgrounds/check-1.png);
+	list-style-position:inside;
+}
+
+#features li:last-child {
+	padding-bottom:30px;
+}
+/* Customer Testimonials on the home page */
+
+.custlogoleft {
+	background:#FFF;
+	text-align:center;
+	padding-top:1em;
+	padding-bottom:1em;
+	height:inherit;
+}
+.custlogoright {
+	background:#FFF;
+	text-align:center;
+	padding-top:1em;
+	padding-bottom:1em;
+}
+.custquote {
+	background-image:url(../images/backgrounds/diagonal-noise.png); 
+	background-repeat:repeat;
+}
+
+.homequote {
+		font-size:26px;
+		padding: .8em .8em 0 .8em;	
+		margin-bottom:14px;
+		font-weight:400;
+}
+
+.homeqby {
+		
+		font-family: "museo-sans", Arial, sans-serif;
+		font-style:normal;
+		font-size:20px;
+		padding: 0 1.2em 1.2em 1em;	
+}
+
+/* Footer*/
+
+.botnav {
+	border-top:3px solid #383838;
+	background:#5d5d5d;
+	padding-top:2em;
+}
+
+#botmenu {
+	float:left;
+	padding:0 0 1em 0;
+}
+
+#botmenu ul {
+	list-style: none;/*Takes away the bullets.*/
+	padding: 0;
+}
+#botmenu li {
+	font-family: "museo-sans", Arial, sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+	font-size:16px;
+	margin-right:1.5em;
+	letter-spacing:1px;
+	padding-bottom:.4em;
+}
+#botmenu li:last-child {
+	margin-right:0;
+}
+#botmenu a {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+}
+#botmenu a:hover {
+	text-decoration:underline;
+}
+.botlogo {
+	padding-top:.2em;
+	padding-right:1em;
+	padding-bottom:2em;
+}
+.copyright {
+	font-family: "museo-sans", Arial, sans-serif;
+	font-weight:300;
+	font-size:14px;
+	color:#fff;
+	padding-top:2em;
+}
