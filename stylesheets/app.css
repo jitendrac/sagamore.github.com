@@ -76,22 +76,22 @@ label {font-size:22px; font-weight:300; margin-top:1em; margin-bottom:2em;}
 #featuredContent.orbit { display: block; }
 
 .homeslideone {
-	background-image: url(../images/banners/grafton-banner-rounded.png);
+	background-image: url(../images/banners/grafton-banner-rounded.jpg);
 	background-repeat:no-repeat; 
 	background-size:100% auto;
 }
 .homeslidetwo {
-	background-image: url(../images/banners/london-banner-rounded.png);
+	background-image: url(../images/banners/london-banner-rounded.jpg);
 	background-repeat:no-repeat; 
 	background-size:100% auto;
 }
 .homeslidethree {
-	background-image: url(../images/banners/variety-banner-rounded.png);
+	background-image: url(../images/banners/variety-banner-rounded.jpg);
 	background-repeat:no-repeat; 
 	background-size:100% auto;
 }
 .homeslidefour {
-	background-image: url(../images/banners/pioneer-banner-rounded.png);
+	background-image: url(../images/banners/pioneer-banner-rounded.jpg);
 	background-repeat:no-repeat; 
 	background-size:100% auto;
 }
