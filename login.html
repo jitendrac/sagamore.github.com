@@ -6,11 +6,11 @@ wrapperClasses: login
 
 <script type="text/javascript">
 $(function() {
-  $("form.login").on("submit", function(e) {
+  $("form.login input[name=subdomain]").on("change", function(e) {
     e.preventDefault();
-    var subdomain = $(this).find("input[name=subdomain]").val()
+    var subdomain = $(this).val()
     var url = "https://" + subdomain + ".sagamore.us";
-    window.location = url;
+    $("form.login").attr("action", url);
   });
 });
 </script>
@@ -39,10 +39,10 @@ $(function() {
   <div class="three columns">
   </div>
   <div class="six columns">
-    <form action="" class="login">
+    <form action="" class="login validate" method="get">
       <div class="row collapse">
         <div class="nine mobile-three columns">
-          <input type="text" name="subdomain" placeholder="mycompany" />
+          <input type="text" name="subdomain" class="required" placeholder="mycompany" />
         </div>
         <div class="three mobile-one columns">
           <span class="postfix">.sagamore.us</span>
