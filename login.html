@@ -3,6 +3,17 @@ layout: default
 title: Login | Sagamore Retail
 ---
 
+<script type="text/javascript">
+$(function() {
+  $("form.login").on("submit", function(e) {
+    e.preventDefault();
+    var subdomain = $(this).find("input[name=subdomain]").val()
+    var url = "https://" + subdomain + ".sagamore.us";
+    window.location = url;
+  });
+});
+</script>
+
 <div class="row">
   <div class="five columns">
 
@@ -35,12 +46,17 @@ title: Login | Sagamore Retail
   <div class="three columns">
   </div>
   <div class="six columns">
-    <form>
-      <input type="text" placeholder="Company (No Spaces)" />
-      <input type="text" placeholder="Username" />
-      <input type="text" placeholder="Password" />
+    <form action="" class="login">
+      <div class="row collapse">
+        <div class="nine mobile-three columns">
+          <input type="text" name="subdomain" placeholder="mycompany" />
+        </div>
+        <div class="three mobile-one columns">
+          <span class="postfix">.sagamore.us</span>
+        </div>
+      </div>
+      <p class="submitbutton"><input type="submit" class="large button" value="Go"></p>
     </form>
-    <p class="submitbutton"><a href="#" class="large button">Go</a></p>
   </div>
   <div class="three columns">
   </div>
