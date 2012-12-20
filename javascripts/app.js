@@ -35,4 +35,24 @@
     });
   }
 
+  $(document).on('submit', 'form.validate', function(e) {
+    var form = $(this);
+
+    // clear errors
+    form.find('.error').removeClass('error');
+
+    // check for new validation errors
+    $(this).find('.required').each(function() {
+      var input = $(this),
+          errors = false;
+
+      if(input.val() === '') {
+        input.addClass('error');
+        errors = true;
+      }
+
+      if(errors) { e.preventDefault(); }
+    });
+  });
+
 })(jQuery, this);
