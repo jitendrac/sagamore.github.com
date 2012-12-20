@@ -142,10 +142,10 @@ label {font-size:22px; font-weight:300; margin-top:1em; margin-bottom:2em;}
 
 .cloud, .wrapper {
 	background-image:url(../images/backgrounds/clowd_background_home_2.png);
+	background-repeat:no-repeat;
 }
 
 .cloud {
-	background-repeat:no-repeat;
 	background-position:bottom;
 	background-size:100%;
 	padding-bottom:30px;
