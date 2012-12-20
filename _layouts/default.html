@@ -20,46 +20,50 @@
   <script src="/javascripts/app.js"></script>
 </head>
 <body>
-  <div class="row">
-    <div class="topnav">
-      <div class="four columns">
-        <div class="logo">
-          <a href="/"><img src="/images/Sagamore-Retail-Logo-Black.svg" alt="Sagamore Retail"></a>
+  <div class="wrapper {{ page.wrapperClasses }}">
+    <div class="row">
+      <div class="topnav">
+        <div class="four columns">
+          <div class="logo">
+            <a href="/"><img src="/images/Sagamore-Retail-Logo-Black.svg" alt="Sagamore Retail"></a>
+          </div>
         </div>
-      </div>
-      <div class="eight columns">
-        <div id="menu"><ul>
-            <li><a class="beta" href="/beta">Beta</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/login">Login</a></li>
-          </ul>
+        <div class="eight columns">
+          <div id="menu"><ul>
+              <li><a class="beta" href="/beta">Beta</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/login">Login</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  {{ content }}
+    <div class="content">
+      {{ content }}
+    </div>
 
-  <div class="botnav">
-    <div class="row">
-      <div class="three columns">
-        <a href="/"><img class="botlogo" src="/images/Sagamore-Retail-Logo-White.svg" alt="Sagamore Retail logo"></a>
-      </div>
-      <div class="three columns">
-        <div id="botmenu"><ul>
-            <li><a href="/beta">Beta</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/developer">Developer</a></li>
-            <li><a href="/login">Login</a></li>
-          </ul>
+    <div class="botnav">
+      <div class="row">
+        <div class="three columns">
+          <a href="/"><img class="botlogo" src="/images/Sagamore-Retail-Logo-White.svg" alt="Sagamore Retail logo"></a>
         </div>
-      </div>
-      <div class="five columns">
-      </div>
-      <div class="twelve columns">
-        <p class="copyright">Copyright &copy; 2012 Sagamore Retail | <a href="/credits">Credits</a></p>
+        <div class="three columns">
+          <div id="botmenu"><ul>
+              <li><a href="/beta">Beta</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/developer">Developer</a></li>
+              <li><a href="/login">Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="five columns">
+        </div>
+        <div class="twelve columns">
+          <p class="copyright">Copyright &copy; 2012 Sagamore Retail | <a href="/credits">Credits</a></p>
+        </div>
       </div>
     </div>
   </div>

@@ -140,16 +140,28 @@ label {font-size:22px; font-weight:300; margin-top:1em; margin-bottom:2em;}
 
 /* Cloud background*/
 
-#cloud {background-image:url(../images/backgrounds/clowd_background_home_2.png); background-repeat:no-repeat; background-position:bottom; background-size:100%; padding-bottom:30px;}
+.cloud, .wrapper {
+	background-image:url(../images/backgrounds/clowd_background_home_2.png);
+}
 
-#clowd {
-	background-image:url(../images/backgrounds/clowd_background_home_2.png); 
-	background-repeat:no-repeat; 
-	background-position:center top;
+.cloud {
+	background-repeat:no-repeat;
+	background-position:bottom;
+	background-size:100%;
+	padding-bottom:30px;
+}
+
+.wrapper {
+	background-position: center top;
 	background-size: 95%;
 	background-attachment:fixed;
 	width:100%;
-	height:100%;}
+	height:100%;
+}
+
+.wrapper.home {
+	background-image: none;
+} 
 
 /* Value Prop Section */
 
