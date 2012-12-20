@@ -161,6 +161,11 @@ label {font-size:22px; font-weight:300; margin-top:1em; margin-bottom:2em;}
 
 .wrapper.home {
 	background-image: none;
+}
+
+.wrapper.login .content {
+	padding-top:3em;
+	padding-bottom:5em;
 } 
 
 /* Value Prop Section */
