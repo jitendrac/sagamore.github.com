@@ -5,7 +5,16 @@ body { background-image: url(../images/backgrounds/Noise_3.png); background-repe
 
 p { font-family: inherit; font-weight:300; font-size: 35px; line-height: 1.6; margin-bottom: 30px; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "museo-sans", Arial, sans-serif; font-weight: 500; font-style: normal; margin-bottom:20px;}
+h1, h2, h3, h4, h5, h6 { 
+	font-family: "museo-sans", Arial, sans-serif; 
+	font-weight: 500; 
+	margin-bottom:20px;
+	padding:0 10px 0 10px;
+}
+
+h1 {
+	font-size:42px;
+}
 
 a {color:#6fa0eb;}
 
@@ -35,8 +44,6 @@ li {
 .logo {margin-bottom:1.4em;}
 
 .textcenter {text-align:center;}
-
-.homeextra {padding-bottom:30px;}
 
 .betabutton {text-align:center; font-size:24px; font-family:"museo-sans", Arial, sans-serif; font-weight:300; padding-top:1em; padding-bottom:1em;}
 
@@ -72,7 +79,7 @@ li {
 }
 
 #menu a.beta {
-  color: #6fa0eb;
+	color: #6fa0eb;
 }
 
 /* Home page banner slides: */
@@ -120,6 +127,7 @@ li {
 	font-weight:normal;
 	text-shadow: 1px 1px 2px #1d1d1d;
 	font-size:36px;
+	padding:0;
 }
 
 .bannerbox h2 {
@@ -130,6 +138,7 @@ li {
 	font-size:24px;
 	line-height:1.2;
 	text-shadow: 1px 1px 2px #1d1d1d;
+	padding:0;
 }
 
 .bannericon {
@@ -155,6 +164,7 @@ li {
 	background-position:bottom;
 	background-size:100%;
 	padding-bottom:30px;
+	margin-bottom:10px;
 }
 
 .wrapper {
@@ -252,18 +262,18 @@ li {
 }
 
 .homequote {
-		font-size:26px;
-		padding: .8em .8em 0 .8em;	
-		margin-bottom:14px;
-		font-weight:400;
+	font-size:26px;
+	padding: .8em .8em 0 .8em;	
+	margin-bottom:14px;
+	font-weight:400;
 }
 
 .homeqby {
-		
-		font-family: "museo-sans", Arial, sans-serif;
-		font-style:normal;
-		font-size:20px;
-		padding: 0 1.2em 1.2em 1em;	
+
+	font-family: "museo-sans", Arial, sans-serif;
+	font-style:normal;
+	font-size:20px;
+	padding: 0 1.2em 1.2em 1em;	
 }
 
 /* Footer*/
@@ -317,44 +327,58 @@ li {
 }
 
 .copyright a {
-  color: #ccc;
+	color: #ccc;
 }
 
-/* Responsive CSS for Medium screenss */
+/* Responsive CSS for Medium screens (iPad landscape) */
 @media only screen and (max-width: 1070px) and (min-width: 951px) {
 
-.bannerbox {
-	margin-top: 2%;
-	height:70%;
-	padding: 1% 6% 2% 2%;
+	.bannerbox {
+		margin-top: 2%;
+		height:70%;
+		padding: 1% 6% 2% 2%;
+	}
+
+	.bannerbox h1 {
+		font-size: 34px;
+	}
+
+	.bannerbox h2 {
+		font-size: 24px;
+	}
+
 }
 
-.bannerbox h1 {
-	font-size: 34px;
-}
-
-.bannerbox h2 {
-	font-size: 24px;
-}
-
-}
-
-/* Responsive CSS for Small screenss */
+/* Responsive CSS for Small screens (iPad portrait) */
 @media only screen and (max-width: 950px) and (min-width: 768px) {
 
-.bannerbox {
-	margin-top: 2%;
-	height:80%;
-	padding: 1% 6% 2% 2%;
-}
+	h1 {
+		font-size:38px;
+	}
 
-.bannerbox h1 {
-	font-size: 28px;
-}
+	p {
+		font-size:32px;
+	}
 
-.bannerbox h2 {
-	font-size: 22px;
-}
+	.bannerbox {
+		margin-top: 2%;
+		height:80%;
+		padding: 1% 6% 2% 2%;
+	}
+
+	.bannerbox h1 {
+		font-size: 28px;
+		margin-bottom:0;
+	}
+
+	.bannerbox h2 {
+		font-size: 22px;
+	}
+
+	.cloud {
+		background-size:120%;
+		padding-bottom:10px;
+	}
 
 }
 
@@ -362,13 +386,13 @@ li {
 /* Responsive CSS for Miniature screens */
 @media only screen and (max-width: 767px) {
 
-h1 {
-	font-size: 34px;
-}
+	h1 {
+		font-size: 34px;
+	}
 
-p {
-	font-size: 28px;
-	line-height:1.4;
-}
+	p {
+		font-size: 28px;
+		line-height:1.4;
+	}
 
 }
