@@ -321,11 +321,11 @@ li {
 }
 
 /* Responsive CSS for Medium screenss */
-@media only screen and (max-width: 1070px) and (min-width: 921px) {
+@media only screen and (max-width: 1070px) and (min-width: 951px) {
 
 .bannerbox {
 	margin-top: 2%;
-	height:80%;
+	height:70%;
 	padding: 1% 6% 2% 2%;
 }
 
@@ -340,7 +340,7 @@ li {
 }
 
 /* Responsive CSS for Small screenss */
-@media only screen and (max-width: 920px) and (min-width: 768px) {
+@media only screen and (max-width: 950px) and (min-width: 768px) {
 
 .bannerbox {
 	margin-top: 2%;
