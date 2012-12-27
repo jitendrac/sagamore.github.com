@@ -119,6 +119,7 @@ li {
 	color: #fff;
 	font-weight:normal;
 	text-shadow: 1px 1px 2px #1d1d1d;
+	font-size:36px;
 }
 
 .bannerbox h2 {
@@ -317,4 +318,57 @@ li {
 
 .copyright a {
   color: #ccc;
+}
+
+/* Responsive CSS for Medium screenss */
+@media only screen and (max-width: 1070px) and (min-width: 921px) {
+
+.bannerbox {
+	margin-top: 2%;
+	height:80%;
+	padding: 1% 6% 2% 2%;
+}
+
+.bannerbox h1 {
+	font-size: 34px;
+}
+
+.bannerbox h2 {
+	font-size: 24px;
+}
+
+}
+
+/* Responsive CSS for Small screenss */
+@media only screen and (max-width: 920px) and (min-width: 768px) {
+
+.bannerbox {
+	margin-top: 2%;
+	height:80%;
+	padding: 1% 6% 2% 2%;
+}
+
+.bannerbox h1 {
+	font-size: 28px;
+}
+
+.bannerbox h2 {
+	font-size: 22px;
+}
+
+}
+
+
+/* Responsive CSS for Miniature screens */
+@media only screen and (max-width: 767px) {
+
+h1 {
+	font-size: 34px;
+}
+
+p {
+	font-size: 28px;
+	line-height:1.4;
+}
+
 }
