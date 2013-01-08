@@ -4,14 +4,28 @@ title: Login | Sagamore Retail
 wrapperClasses: shortpage
 ---
 
+<script type="text/javascript" src="/javascripts/URI.min.js"></script>
 <script type="text/javascript">
 $(function() {
-  $("form.login input[name=subdomain]").on("change", function(e) {
+  var subdomainInput = $("form.login input[name=subdomain]"),
+      uri = new URI(),
+      qs = uri.search(true);
+
+  subdomainInput.on("change", function(e) {
     e.preventDefault();
-    var subdomain = $(this).val()
-    var url = "https://" + subdomain + ".sagamore.us";
+    var subdomain = $(this).val(),
+        url = "https://" + subdomain + ".sagamore.us";
     $("form.login").attr("action", url);
   });
+
+  if(qs.subdomain !== null) {
+    subdomainInput.val(qs.subdomain);
+  }
+  
+  if(qs.invalid == 'true') {
+    subdomainInput.after('<small class="error">Sorry, we don\'t recognize that subdomain.</small>');
+    subdomainInput.addClass('error');
+  }
 });
 </script>
 

@@ -39,6 +39,7 @@
     var form = $(this);
 
     // clear errors
+    form.find('small.error').remove();
     form.find('.error').removeClass('error');
 
     // check for new validation errors
