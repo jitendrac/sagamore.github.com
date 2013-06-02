@@ -6,6 +6,12 @@ body {
 
 a {
 	text-decoration:underline;
+	font-weight:300;
+	color:#3e6182;
+}
+
+a:hover {
+	color:#3e6182;
 }
 
 .logo {
@@ -94,4 +100,28 @@ h1.subheader {
 	text-transform:uppercase;
 	font-size:emCalc(10px);
 	color:#a4a4a4;
+}
+
+
+//Page Styling
+
+.page {
+	padding:2em;
+	margin-bottom:0;
+	border-bottom:1px solid #b8b8b8;
+	background-color:#f3f0eb;
+}
+
+.tour-module {
+	background:white;
+	border: 1px solid #b8b8b8;
+	margin-top:2em;
+	margin-bottom:2em;
+	padding:2em;
+	ul {
+		list-style-position:inside;
+	}
+	img {
+		margin-bottom:1em;
+	}
 }
